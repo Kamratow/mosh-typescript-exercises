@@ -50,3 +50,12 @@ function getUser(): User {
 
 let user = getUser();
 console.log(user?.address?.street);
+
+let foo;
+
+function bar() {
+  console.log("bar has been used for x value");
+  return 5;
+}
+
+let x = foo ?? bar();
