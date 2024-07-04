@@ -18,3 +18,14 @@ type Fish = {
 };
 
 type Pet = Bird | Fish;
+
+type DaysOfWeek =
+  | "Monday"
+  | "Tuesday"
+  | "Wednesday"
+  | "Thursday"
+  | "Friday"
+  | "Saturday"
+  | "Sunday";
+
+let currentDayOfWeek: DaysOfWeek = "Thursday";
