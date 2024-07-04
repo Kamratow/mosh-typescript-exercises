@@ -2,6 +2,9 @@ type User = {
   name: string;
   age: number;
   occupation?: string;
+  address?: {
+    street: string;
+  };
 };
 
 let users: User[] = [
@@ -37,3 +40,13 @@ type DaysOfWeek =
   | "Sunday";
 
 let currentDayOfWeek: DaysOfWeek = "Thursday";
+
+function getUser(): User {
+  return {
+    name: "Test",
+    age: 28,
+  };
+}
+
+let user = getUser();
+console.log(user?.address?.street);
