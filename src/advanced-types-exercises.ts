@@ -19,6 +19,14 @@ type Fish = {
 
 type Pet = Bird | Fish;
 
+let myPet: Pet = {
+  fly: () => {
+    console.log("myPet is flying!");
+  },
+};
+
+myPet.fly();
+
 type DaysOfWeek =
   | "Monday"
   | "Tuesday"
