@@ -59,3 +59,6 @@ function bar() {
 }
 
 let x = foo ?? bar();
+
+let value: unknown = "a";
+console.log(value.toUpperCase());
