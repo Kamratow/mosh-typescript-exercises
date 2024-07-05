@@ -26,3 +26,21 @@ class Employee extends Person {
 
 let newEmployee = new Employee("John", "Test", 700);
 console.log(newEmployee.fullName, newEmployee.salary);
+
+interface Address {
+  street: string;
+  city: string;
+  zipCode: number;
+}
+
+interface IEmployee {
+  name: string;
+  salary: number;
+  address: Address;
+}
+
+let employee: IEmployee = {
+  name: "John Smith",
+  salary: 50_000,
+  address: { street: "Flinders st", city: "Melbourne", zipCode: 3144 },
+};
